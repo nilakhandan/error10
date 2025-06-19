@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  color: #fff;
+}
+.glass-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 28px;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffcc;
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #00ffcc;
+}
+.intro {
+  text-align: center;
+  padding: 120px 20px;
+}
+.intro h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+.intro span {
+  color: #00ffcc;
+}
+.intro p {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+.section {
+  padding: 60px 40px;
+}
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+.section p, .section ul {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+.section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-top: 20px;
+}
+.contact input, .contact textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+}
+.contact button {
+  background: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.contact button:hover {
+  background: #00cc99;
+}
+.socials a {
+  margin-right: 15px;
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+.socials a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #0a0a0a;
+  color: #666;
+}
+
+
+.socials a i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #000000, #1c1c1c);
+  color: #ffffff;
+}
+
+.hero-logo {
+  width: 80px;
+  height: 80px;
+  filter: invert(1);
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00f2ff;
+  margin: 0.5rem 0;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  color: #cccccc;
+}
+
+.glass-button {
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #00f2ff;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.hero-nav {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.hero-nav a {
+  color: #ffffffcc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.hero-nav a:hover {
+  color: #ffffff;
+}
+
+
+.glass-nav-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+
+.logo-name-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.brand-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2.5rem;
+  color: #00f2ff;
+  margin: 0;
+}
+
+
+/* Center brand name and logo */
+.logo-name-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.brand-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 3rem;
+  color: #00f2ff;
+  text-align: center;
+}
+
+/* Resize social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icons .icon {
+  width: 36px;
+  height: 36px;
+  filter: invert(1);
+}
+
+/* Improve contact form input label fonts */
+form label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+form input, form textarea {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 1rem;
+  background: #222;
+  color: #fff;
+}
+
+
+.submit-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #00f2ff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #00c2cc;
+}
+
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Optional: Add glass effect container for the form */
+form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
